@@ -1,30 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const calculatorForm = document.getElementById("co2Calculator");
+    const calculatorForm = document.getElementById("calculatorForm");
     const calculateButton = document.getElementById("calculateButton");
-    const resultDiv = document.getElementById("result");
-    const co2EmissionSpan = document.getElementById("co2Emission");
+    const carbonFootprintSpan = document.getElementById("carbonFootprint");
 
-    calculateButton.addEventListener("click", function () {
-        const activity = document.getElementById("activity").value;
-        const distance = parseFloat(document.getElementById("distance").value);
+    // Function to calculate carbon footprint
+    function calculateCarbonFootprint() {
+        // Step 1: Travel
+        const carMiles = parseFloat(document.getElementById("carMiles").value);
+        // Add more travel-related variables here
 
-        let emission = 0;
+        // Step 2: Food
+        const meatConsumption = parseFloat(document.getElementById("meatConsumption").value);
+        // Add more food-related variables here
 
-        switch (activity) {
-            case "car":
-                emission = distance * 0.45;
-                break;
-            case "bike":
-                emission = 0;
-                break;
-            case "bus":
-                emission = distance * 0.03;
-                break;
-            default:
-                emission = 0;
-        }
+        // Step 3: Home
+        const electricityUsage = parseFloat(document.getElementById("electricityUsage").value);
+        // Add more home-related variables here
 
-        resultDiv.classList.remove("hidden");
-        co2EmissionSpan.textContent = emission.toFixed(2);
-    });
+        // Step 4: Consumption
+        const clothingSpending = parseFloat(document.getElementById("clothingSpending").value);
+        // Add more consumption-related variables here
+
+        // Calculate total carbon footprint (a simple sum for demonstration purposes)
+        const totalFootprint = carMiles + meatConsumption * 10 + electricityUsage * 0.5 + clothingSpending * 0.02;
+
+        carbonFootprintSpan.textContent = totalFootprint.toFixed(2) + " kg CO2e/year";
+    }
+
+    calculateButton.addEventListener("click", calculateCarbonFootprint);
 });
