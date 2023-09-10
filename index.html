@@ -5,77 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Carbon Footprint Calculator</title>
-    <style>
-        /* Add the CSS modifications here */
-        #step5 {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <h1>Carbon Footprint Calculator</h1>
     </div>
 
-    <!-- Step 1: Travel -->
-    <div id="step1" class="step">
-        <h2>Step 1: Travel</h2>
-        <form id="step1Form">
-            <div class="form-group">
-                <label for="carMiles">Miles driven by car per year:</label>
-                <input type="number" id="carMiles" name="carMiles" step="0.01" required>
-            </div>
-            <button type="button" class="next-button" id="nextButtonStep1">Next</button>
-        </form>
-    </div>
+    <!-- Calculator Steps -->
+    <div class="steps-container">
+        <!-- Step 1: Travel -->
+        <div id="step1" class="step">
+            <h2>Step 1: Travel</h2>
+            <form id="step1Form">
+                <div class="form-group">
+                    <label for="travelMethod">Select your travel method:</label>
+                    <select id="travelMethod" name="travelMethod" required>
+                        <option value="0">Walk/Bike/E-bike (0 kg CO2)</option>
+                        <option value="3.0">Petro-/Diesel car (3.0 tons CO2 per year)</option>
+                        <option value="0.5">Methane car (0.5 tons CO2 per year)</option>
+                        <option value="0.6">Electric car (0.6 tons CO2 per year)</option>
+                        <option value="1.6">Hybrid (1.6 tons CO2 per year)</option>
+                    </select>
+                </div>
+                <button type="button" class="next-button">Next</button>
+            </form>
+        </div>
 
-    <!-- Step 2: Food -->
-    <div id="step2" class="step">
-        <h2>Step 2: Food</h2>
-        <form id="step2Form">
-            <div class="form-group">
-                <label for="meatConsumption">Meat consumption per week (in kg):</label>
-                <input type="number" id="meatConsumption" name="meatConsumption" step="0.01" required>
-            </div>
-            <!-- Add more food-related questions here -->
-            <button type="button" class="prev-button" id="prevButtonStep2">Previous</button>
-            <button type="button" class="next-button" id="nextButtonStep2">Next</button>
-        </form>
-    </div>
+        <!-- Step 2: Food -->
+        <div id="step2" class="step">
+            <h2>Step 2: Food</h2>
+            <form id="step2Form">
+                <div class="form-group">
+                    <label for="meatConsumption">Select your meat consumption:</label>
+                    <select id="meatConsumption" name="meatConsumption" required>
+                        <option value="0">Meat regularly (3 to 5 times a week) (0 kg CO2)</option>
+                        <option value="0.5">Meat very rarely (Less than 3 times a week) (0.5 tons CO2 per year)</option>
+                        <option value="0.3">Only chicken (0.3 tons CO2 per year)</option>
+                        <option value="0.1">Pescatarian (0.1 tons CO2 per year)</option>
+                        <option value="0.05">Vegetarian (0.05 tons CO2 per year)</option>
+                        <option value="0.0">Vegan (0.0 tons CO2 per year)</option>
+                    </select>
+                </div>
+                <button type="button" class="prev-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </form>
+        </div>
 
-    <!-- Step 3: Home -->
-    <div id="step3" class="step">
-        <h2>Step 3: Home</h2>
-        <form id="step3Form">
-            <div class="form-group">
-                <label for="electricityUsage">Electricity usage per month (in kWh):</label>
-                <input type="number" id="electricityUsage" name="electricityUsage" step="0.01" required>
+        <!-- Step 3: Result -->
+        <div id="step3" class="step">
+            <h2>Step 3: Result</h2>
+            <div id="result">
             </div>
-            <!-- Add more home-related questions here -->
-            <button type="button" class="prev-button" id="prevButtonStep3">Previous</button>
-            <button type="button" class="next-button" id="nextButtonStep3">Next</button>
-        </form>
-    </div>
-
-    <!-- Step 4: Consumption -->
-    <div id="step4" class="step">
-        <h2>Step 4: Consumption</h2>
-        <form id="step4Form">
-            <div class="form-group">
-                <label for="clothingSpending">Annual spending on clothing:</label>
-                <input type="number" id="clothingSpending" name="clothingSpending" step="0.01" required>
-            </div>
-            <!-- Add more consumption-related questions here -->
-            <button type="button" class="prev-button" id="prevButtonStep4">Previous</button>
-            <button type="button" class="next-button" id="nextButtonStep4">Next</button>
-        </form>
-    </div>
-
-    <!-- Step 5: Result -->
-    <div id="step5" class="step">
-        <h2>Step 5: Result</h2>
-        <div id="result">
-            <!-- Result will be displayed here -->
         </div>
     </div>
 </body>

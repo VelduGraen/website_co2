@@ -1,32 +1,38 @@
+/* Reset some default styles */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles for the entire page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
     background-color: #fff;
     margin: 20px auto;
     padding: 20px;
-    max-width: 90%; /* Responsive container width */
+    max-width: 80%; /* Adjust container width */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Center the container content */
+    text-align: center;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+    color: #007BFF; /* Blue color for headings */
 }
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left; /* Left-align form elements */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold; /* Make labels bold */
 }
 
 select,
@@ -35,7 +41,7 @@ input[type="number"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
 }
 
 button {
@@ -50,19 +56,39 @@ button {
 #result {
     margin-top: 20px;
     text-align: center;
+    font-weight: bold; /* Make result text bold */
+    color: #007BFF; /* Blue color for result text */
 }
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 600px) {
+    /* Adjust padding for smaller screens */
     .container {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px;
     }
 
+    /* Increase heading size for better readability on small screens */
     h2 {
-        font-size: 24px; /* Increase heading size for better readability */
+        font-size: 24px;
     }
 
+    /* Make buttons full width on small screens */
     button {
-        width: 100%; /* Make buttons full width on small screens */
+        width: 100%;
     }
 }
+
+/* Additional styles specific to the calculator steps */
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%; /* Adjust container width */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,
