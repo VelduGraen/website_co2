@@ -1,54 +1,93 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const calculatorForm = document.getElementById("calculatorForm");
     const steps = document.querySelectorAll(".step");
     const prevButtons = document.querySelectorAll(".prev-button");
     const nextButtons = document.querySelectorAll(".next-button");
-    const carbonFootprintSpan = document.getElementById("carbonFootprint");
+    const calculatorForm = document.querySelector("form");
 
     let currentStep = 0;
 
-    // Function to navigate to the next step
+    function showStep(stepNumber) {
+        steps.forEach((step, index) => {
+            if (index === stepNumber) {
+                step.style.display = "block";
+            } else {
+                step.style.display = "none";
+            }
+        });
+    }
+
     function goToNextStep() {
         if (currentStep < steps.length - 1) {
-            steps[currentStep].style.display = "none";
             currentStep++;
-            steps[currentStep].style.display = "block";
+            showStep(currentStep);
         }
     }
 
-    // Function to navigate to the previous step
     function goToPrevStep() {
         if (currentStep > 0) {
-            steps[currentStep].style.display = "none";
             currentStep--;
-            steps[currentStep].style.display = "block";
+            showStep(currentStep);
         }
     }
 
     // Event listeners for next and previous buttons
-    nextButtons.forEach((button) => {
-        button.addEventListener("click", goToNextStep);
+    nextButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            goToNextStep();
+        });
     });
 
-    prevButtons.forEach((button) => {
-        button.addEventListener("click", goToPrevStep);
+    prevButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            goToPrevStep();
+        });
     });
 
-    // Function to calculate carbon footprint
-    function calculateCarbonFootprint(e) {
-        e.preventDefault();
-
-        // Collect and calculate the data from each step here
+    // Function to calculate and display the estimated carbon footprint
+    function calculateCarbonFootprint() {
         const carMiles = parseFloat(document.getElementById("carMiles").value);
         const meatConsumption = parseFloat(document.getElementById("meatConsumption").value);
         const electricityUsage = parseFloat(document.getElementById("electricityUsage").value);
         const clothingSpending = parseFloat(document.getElementById("clothingSpending").value);
 
-        // Calculate total carbon footprint (a simple sum for demonstration purposes)
-        const totalFootprint = carMiles + meatConsumption * 10 + electricityUsage * 0.5 + clothingSpending * 0.02;
+        // Calculate total carbon footprint based on some arbitrary factors for demonstration purposes
+        const carEmissionFactor = 2.5; // kg CO2e per mile
+        const meatEmissionFactor = 20; // kg CO2e per kg of meat
+        const electricityEmissionFactor = 0.5; // kg CO2e per kWh
+        const clothingEmissionFactor = 0.02; // kg CO2e per dollar spent on clothing
 
-        carbonFootprintSpan.textContent = totalFootprint.toFixed(2) + " kg CO2e/year";
+        const totalFootprint = (carMiles * carEmissionFactor) +
+                              (meatConsumption * meatEmissionFactor) +
+                              (electricityUsage * electricityEmissionFactor) +
+                              (clothingSpending * clothingEmissionFactor);
+
+        return totalFootprint;
     }
 
-    calculatorForm.addEventListener("submit", calculateCarbonFootprint);
+    // Event listener for form submission
+    calculatorForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Calculate the carbon footprint
+        const totalFootprint = calculateCarbonFootprint();
+
+        // Display the result in the "Result" step
+        displayResult(totalFootprint);
+
+        // Move to the "Result" step
+        currentStep = steps.length - 1;
+        showStep(currentStep);
+    });
+
+    // Function to display the calculated result
+    function displayResult(result) {
+        const resultElement = document.getElementById("result");
+        resultElement.innerHTML = `
+            <p>Your estimated carbon footprint is: <strong>${result.toFixed(2)} kg CO2e/year</strong></p>
+            <p>Thank you for calculating your carbon footprint!</p>
+        `;
+    }
+
+    // Show the initial step
+    showStep(currentStep);
 });
