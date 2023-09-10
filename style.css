@@ -1,94 +1,245 @@
 /* Reset some default styles */
-body, p {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* Base styles for the entire page */
-body {
+html, body {
     font-family: Arial, sans-serif;
+    color: #333;
     background-color: #f2f2f2;
 }
 
 .container {
-    background-color: #fff;
-    margin: 20px auto;
+    position: relative; /* added for positioning the language selector */
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 80%; /* Adjust container width */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
 }
 
 h1, h2 {
-    text-align: center;
-    color: #007BFF; /* Blue color for headings */
-}
-
-.form-group {
     margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Make labels bold */
-}
-
-select,
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#result {
-    margin-top: 20px;
     text-align: center;
-    font-weight: bold; /* Make result text bold */
-    color: #007BFF; /* Blue color for result text */
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 600px) {
-    /* Adjust padding for smaller screens */
-    .container {
-        padding: 10px;
-    }
-
-    /* Increase heading size for better readability on small screens */
-    h2 {
-        font-size: 24px;
-    }
-
-    /* Make buttons full width on small screens */
-    button {
-        width: 100%;
-    }
-}
-
-/* Additional styles specific to the calculator steps */
-.steps-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: #3498db;
 }
 
 .step {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 80%; /* Adjust container width */
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.step:not(#step1) {
+    display: none;
+}
+
+.step:last-child {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #666;
+}
+
+button {
+    display: inline-block;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+#result {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+    padding-top: 20px;
+}
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles for the entire page */
+html, body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+.container {
+    position: relative; /* added for positioning the language selector */
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3498db;
+}
+
+.step {
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.step:not(#step1) {
+    display: none;
+}
+
+.step:last-child {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #666;
+}
+
+button {
+    display: inline-block;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+#result {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+    padding-top: 20px;
+}
+
+/* CSS for Language Selector */
+#lang {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 90px; /* Set a fixed width */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#lang:hover {
+    background-color: #ddd;
+}
+
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .step {
+        margin: 20px auto;
+    }
+}
+
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .step {
+        margin: 20px auto;
+    }
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+}
+
+/* Space above the Start Button */
+#startButton {
+    margin-top: 20px;
+}

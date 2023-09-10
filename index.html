@@ -2,62 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Carbon Footprint Calculator</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <title id="title">Carbon Footprint Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Carbon Footprint Calculator</h1>
-    </div>
+<select id="lang">
+    <option value="en">English</option>
+    <option value="is">Íslenska</option>
+    <option value="da">Dansk</option>
+</select>
 
-    <!-- Calculator Steps -->
+<!-- Frontpage Welcome -->
+<div class="container" id="frontpage">
+    <h1 id="welcomeTitle"></h1>
+    <p id="welcomeMessage"></p>
+</div>
+
+<!-- About Us Section -->
+<div class="container" id="about">
+    <h2 id="aboutTitle"></h2>
+    <p id="aboutMessage"></p>
+    <button id="startButton" type="button">Calculate Your Footprint</button>
+</div>
+<!-- Carbon Footprint Section -->
+<div class="container" id="content" style="display: none;">
+    <h1 id="main-title">Carbon Footprint Calculator</h1>
     <div class="steps-container">
-        <!-- Step 1: Travel -->
-        <div id="step1" class="step">
-            <h2>Step 1: Travel</h2>
+        <div class="step" id="step1">
+            <h2 id="step1-title">Step 1: Travel</h2>
             <form id="step1Form">
                 <div class="form-group">
-                    <label for="travelMethod">Select your travel method:</label>
+                    <label for="travelMethod" id="travel-label">Select your travel method:</label>
                     <select id="travelMethod" name="travelMethod" required>
-                        <option value="0">Walk/Bike/E-bike (0 kg CO2)</option>
-                        <option value="3.0">Petro-/Diesel car (3.0 tons CO2 per year)</option>
-                        <option value="0.5">Methane car (0.5 tons CO2 per year)</option>
-                        <option value="0.6">Electric car (0.6 tons CO2 per year)</option>
-                        <option value="1.6">Hybrid (1.6 tons CO2 per year)</option>
                     </select>
                 </div>
-                <button type="button" class="next-button">Next</button>
+                <button class="next-button" type="button">Next</button>
             </form>
         </div>
 
         <!-- Step 2: Food -->
-        <div id="step2" class="step">
-            <h2>Step 2: Food</h2>
+        <div class="step" id="step2">
+            <h2 id="step2-title">Step 2: Food</h2>
             <form id="step2Form">
                 <div class="form-group">
-                    <label for="meatConsumption">Select your meat consumption:</label>
+                    <label for="meatConsumption" id="meat-label">Select your meat consumption:</label>
                     <select id="meatConsumption" name="meatConsumption" required>
-                        <option value="0">Meat regularly (3 to 5 times a week) (0 kg CO2)</option>
-                        <option value="0.5">Meat very rarely (Less than 3 times a week) (0.5 tons CO2 per year)</option>
-                        <option value="0.3">Only chicken (0.3 tons CO2 per year)</option>
-                        <option value="0.1">Pescatarian (0.1 tons CO2 per year)</option>
-                        <option value="0.05">Vegetarian (0.05 tons CO2 per year)</option>
-                        <option value="0.0">Vegan (0.0 tons CO2 per year)</option>
                     </select>
                 </div>
-                <button type="button" class="prev-button">Previous</button>
-                <button type="button" class="next-button">Next</button>
+                <button class="prev-button" type="button">Previous</button>
+                <button class="next-button" type="button">Next</button>
             </form>
         </div>
 
-        <!-- Step 3: Result -->
-        <div id="step3" class="step">
-            <h2>Step 3: Result</h2>
+        <!-- Step 3: Home -->
+        <div class="step" id="step3">
+            <h2 id="step3-title">Step 3: Home</h2>
+            <form id="step3Form">
+                <div class="form-group">
+                    <label for="homestats" id="homestats-label">Select your home consumption:</label>
+                    <select id="homestats" name="homestats" required>
+                    </select>
+                </div>
+                <button class="prev-button" type="button">Previous</button>
+                <button class="next-button" type="button">Next</button>
+            </form>
+        </div>
+
+        <!-- Step 4: Service Consumption -->
+        <div class="step" id="step4">
+            <h2 id="step4-title">Step 4: Goods Consumption</h2>
+            <form id="step4Form">
+                <div class="form-group">
+                    <label for="serviceConsumption" id="serviceConsumption-label">Select your goods consumption:</label>
+                    <select id="serviceConsumption" name="serviceConsumption" required>
+                    </select>
+                </div>
+                <button class="prev-button" type="button">Previous</button>
+                <button class="next-button" type="button">Next</button>
+            </form>
+        </div>
+
+        <!-- Step 5: Goods Consumption -->
+        <div class="step" id="step5">
+            <h2 id="step5-title">Step 5: Service Consumption</h2>
+            <form id="step5Form">
+                <div class="form-group">
+                    <label for="goodsConsumption" id="goodsConsumption-label">Select your service consumption:</label>
+                    <select id="goodsConsumption" name="goodsConsumption" required>
+                    </select>
+                </div>
+                <button class="prev-button" type="button">Previous</button>
+                <button class="next-button" type="button">Next</button>
+            </form>
+        </div>
+
+        <!-- Step 6: Result -->
+        <div class="step" id="step6">
+            <h2 id="step6-title">Step 6: Your footprint</h2>
             <div id="result">
             </div>
         </div>
     </div>
-</body>
+</div>
 <script src="script.js"></script>
+</body>
 </html>

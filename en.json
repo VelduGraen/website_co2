@@ -1,0 +1,122 @@
+{
+  "welcomeTitle": "Welcome to the Carbon Footprint Calculator!",
+  "welcomeMessage": "We are here to help you understand your carbon emissions and how you can reduce them. Ready to begin?",
+  "aboutTitle": "About Carbon Footprint Calculator",
+  "aboutMessage": "Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
+  "title": "Carbon Footprint Calculator",
+  "mainTitle": "Carbon Footprint Calculator",
+  "startButton": "Calculate Your Footprint",
+  "nextButtonText": "Next",
+  "prevButtonText": "Previous",
+  "travelLabel": "Select your travel method:",
+  "meatLabel": "Select your meat consumption:",
+  "homeLabel": "Select your home consumption:",
+  "serviceConsumptionLabel": "How much do you usual spend on services per month?:",
+  "goodsConsumptionLabel": "How much do you usual spend on goods per month?:",
+  "step1Title": "Travel",
+  "travelOptions": {
+    "walkBike": {
+      "text": "Walking or Biking",
+      "value": 0
+    },
+    "publicTransport": {
+      "text": "Public Transport",
+      "value": 0.5
+    },
+    "patrolAndDiesel": {
+      "text": "Patrol and Diesel",
+      "value": 3.0
+    },
+    "electicCar": {
+      "text": "Electric Car",
+      "value": 0.6
+    },
+    "hybridCar": {
+      "text": "Hybrid Car",
+      "value": 1.6
+    }
+  },
+  "step2Title": "Food",
+  "meatOptions": {
+    "meatRegulary": {
+      "text": "Meat regulary 3 to 5 times a week",
+      "value": 2.5
+    },
+    "meatVeryRarely": {
+      "text": "Meat very rarely less than 3 times a week",
+      "value": 0.35
+    },
+    "onlyChicken": {
+      "text": "Only chicken",
+      "value": 0.35
+    },
+    "pescatarian": {
+      "text": "Pescatarian",
+      "value": 0.5
+    },
+    "vegetarian": {
+      "text": "Vegetarian",
+      "value": 1.5
+    },
+    "vegan": {
+      "text": "Vegan",
+      "value": 1.2
+    }
+  },
+  "step3Title": "Home",
+  "homeOptions": {
+    "solarPower": {
+      "text": "Solar Power",
+      "value": 0
+    },
+    "electricity": {
+      "text": "Electricity",
+      "value": 1.2
+    },
+    "naturalGas": {
+      "text": "Natural Gas",
+      "value": 2.5
+    }
+  },
+  "step4Title": "Service",
+  "serviceConsumptionOptions": {
+    "low": {
+      "text": "0-70.000 ISK",
+      "value": 1.14
+    },
+    "medium": {
+      "text": "70.000-115.000 ISK",
+      "value": 2.28
+    },
+    "high": {
+      "text": "115.000-160.000",
+      "value": 3.42
+    },
+    "veryHigh": {
+      "text": "160.000 ISK+",
+      "value": 4.58
+    }
+  },
+  "step5Title": "Goods",
+  "goodsConsumptionOptions": {
+    "low": {
+      "text": "0-30.000 ISK",
+      "value": 0.76
+    },
+    "medium": {
+      "text": "30.000-50.000 ISK",
+      "value": 1.52
+    },
+    "high": {
+      "text": "50.000-70.000 ISK",
+      "value": 2.28
+    },
+    "veryHigh": {
+      "text": "70.000 ISK+",
+      "value": 3.04
+    }
+  },
+  "step6Title": "Your footprint",
+  "resultText": "Your carbon footprint is {result} CO2 tons per year.",
+  "thanksMsg": "Thank you for calculating your carbon footprint!"
+}

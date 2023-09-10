@@ -1,0 +1,123 @@
+{
+  "welcomeTitle": "Velkommen til Klimaaftryksberegneren!",
+  "welcomeMessage": "Vi er her for at hjælpe dig med at forstå dit CO2-udslip og hvordan du kan reducere det. Er du klar til at starte?",
+  "aboutTitle": "Om Klimaaftryksberegneren",
+  "aboutMessage": "Klimaaftryksberegneren er et interaktivt værktøj, der hjælper brugerne med at måle deres klimaaftryk baseret på deres daglige livsstil. Det gør det muligt for folk at blive mere bevidste om deres CO2-udslip og giver forslag til, hvordan de kan reducere deres aftryk og træffe mere bæredygtige valg.",
+  "title": "Klimaaftryksberegner",
+  "mainTitle": "Klimaaftryksberegner",
+  "startButton": "Beregn dit fodspor",
+  "calculateFootprintButton": "Beregn dit klimaaftryk",
+  "nextButtonText": "Næste",
+  "prevButtonText": "Forrige",
+  "travelLabel": "Vælg din rejsemetode:",
+  "meatLabel": "Vælg dit kødforbrug:",
+  "homeLabel": "Vælg dit hjemmeforbrug:",
+  "serviceConsumptionLabel": "Hvor meget bruger du normalt på service om måneden?:",
+  "goodsConsumptionLabel": "Hvor meget bruger du normalt på varer om måneden?:",
+  "step1Title": "Rejse",
+  "travelOptions": {
+    "walkBike": {
+      "text": "Gå eller cykle",
+      "value": 0
+    },
+    "publicTransport": {
+      "text": "Offentlig transport",
+      "value": 0.5
+    },
+    "patrolAndDiesel": {
+      "text": "Benzin og diesel",
+      "value": 3.0
+    },
+    "electicCar": {
+      "text": "Elbil",
+      "value": 0.6
+    },
+    "hybridCar": {
+      "text": "Hybridbil",
+      "value": 1.6
+    }
+  },
+  "step2Title": "Mad",
+  "meatOptions": {
+    "meatRegulary": {
+      "text": "Kød regelmæssigt 3 til 5 gange om ugen",
+      "value": 2.5
+    },
+    "meatVeryRarely": {
+      "text": "Kød meget sjældent, mindre end 3 gange om ugen",
+      "value": 0.35
+    },
+    "onlyChicken": {
+      "text": "Kun kylling",
+      "value": 0.35
+    },
+    "pescatarian": {
+      "text": "Pescetar",
+      "value": 0.5
+    },
+    "vegetarian": {
+      "text": "Vegetar",
+      "value": 1.5
+    },
+    "vegan": {
+      "text": "Veganer",
+      "value": 1.2
+    }
+  },
+  "step3Title": "Hjem",
+  "homeOptions": {
+    "solarPower": {
+      "text": "Solenergi",
+      "value": 0
+    },
+    "electricity": {
+      "text": "Elektricitet",
+      "value": 1.2
+    },
+    "naturalGas": {
+      "text": "Naturgas",
+      "value": 2.5
+    }
+  },
+  "step4Title": "Service",
+  "serviceConsumptionOptions": {
+    "low": {
+      "text": "0-70.000 DKK",
+      "value": 1.14
+    },
+    "medium": {
+      "text": "70.000-115.000 DKK",
+      "value": 2.28
+    },
+    "high": {
+      "text": "115.000-160.000 DKK",
+      "value": 3.42
+    },
+    "veryHigh": {
+      "text": "160.000 DKK+",
+      "value": 4.58
+    }
+  },
+  "step5Title": "Varer",
+  "goodsConsumptionOptions": {
+    "low": {
+      "text": "0-30.000 DKK",
+      "value": 0.76
+    },
+    "medium": {
+      "text": "30.000-50.000 DKK",
+      "value": 1.52
+    },
+    "high": {
+      "text": "50.000-70.000 DKK",
+      "value": 2.28
+    },
+    "veryHigh": {
+      "text": "70.000 DKK+",
+      "value": 3.04
+    }
+  },
+  "step6Title": "Dit aftryk",
+  "resultText": "Dit klimaaftryk er {result} ton CO2 om året.",
+  "thanksMsg": "Tak for at beregne dit klimaaftryk!"
+}
