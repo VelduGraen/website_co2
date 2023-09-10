@@ -4,31 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CO2 Emission Calculator</title>
+    <title>Carbon Footprint Calculator</title>
 </head>
 <body>
     <div class="container">
-        <h1>CO2 Emission Calculator</h1>
-        <form id="co2Calculator">
-            <div class="form-group">
-                <label for="activity">Select Activity:</label>
-                <select id="activity" name="activity">
-                    <option value="car">Driving a Car</option>
-                    <option value="bike">Riding a Bike</option>
-                    <option value="bus">Taking a Bus</option>
-                </select>
+        <h1>Carbon Footprint Calculator</h1>
+        <form id="calculatorForm">
+            <!-- Step 1: Travel -->
+            <div class="step" id="step1">
+                <h2>Step 1: Travel</h2>
+                <div class="form-group">
+                    <label for="carMiles">Miles driven by car per year:</label>
+                    <input type="number" id="carMiles" name="carMiles" step="0.01" required>
+                </div>
+                <!-- Add more travel-related questions here -->
             </div>
-            <div class="form-group">
-                <label for="distance">Distance (in miles):</label>
-                <input type="number" id="distance" name="distance" step="0.01" required>
+
+            <!-- Step 2: Food -->
+            <div class="step" id="step2">
+                <h2>Step 2: Food</h2>
+                <div class="form-group">
+                    <label for="meatConsumption">Meat consumption per week (in kg):</label>
+                    <input type="number" id="meatConsumption" name="meatConsumption" step="0.01" required>
+                </div>
+                <!-- Add more food-related questions here -->
             </div>
+
+            <!-- Step 3: Home -->
+            <div class="step" id="step3">
+                <h2>Step 3: Home</h2>
+                <div class="form-group">
+                    <label for="electricityUsage">Electricity usage per month (in kWh):</label>
+                    <input type="number" id="electricityUsage" name="electricityUsage" step="0.01" required>
+                </div>
+                <!-- Add more home-related questions here -->
+            </div>
+
+            <!-- Step 4: Consumption -->
+            <div class="step" id="step4">
+                <h2>Step 4: Consumption</h2>
+                <div class="form-group">
+                    <label for="clothingSpending">Annual spending on clothing:</label>
+                    <input type="number" id="clothingSpending" name="clothingSpending" step="0.01" required>
+                </div>
+                <!-- Add more consumption-related questions here -->
+            </div>
+
+            <!-- Step 5: Your Footprint -->
+            <div class="step" id="step5">
+                <h2>Step 5: Your Footprint</h2>
+                <div id="result">
+                    <p>Your estimated carbon footprint: <span id="carbonFootprint">0</span> kg CO2e/year</p>
+                </div>
+            </div>
+
             <div class="form-group">
                 <button type="button" id="calculateButton">Calculate</button>
             </div>
         </form>
-        <div id="result" class="hidden">
-            <p>Your estimated CO2 emissions: <span id="co2Emission">0</span> kg</p>
-        </div>
     </div>
     <script src="script.js"></script>
 </body>
