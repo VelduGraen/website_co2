@@ -1,1 +1,35 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CO2 Emission Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CO2 Emission Calculator</h1>
+        <form id="co2Calculator">
+            <div class="form-group">
+                <label for="activity">Select Activity:</label>
+                <select id="activity" name="activity">
+                    <option value="car">Driving a Car</option>
+                    <option value="bike">Riding a Bike</option>
+                    <option value="bus">Taking a Bus</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="distance">Distance (in miles):</label>
+                <input type="number" id="distance" name="distance" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="calculateButton">Calculate</button>
+            </div>
+        </form>
+        <div id="result" class="hidden">
+            <p>Your estimated CO2 emissions: <span id="co2Emission">0</span> kg</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
