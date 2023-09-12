@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function calculateCarbonFootprint() {
         const travelMethod = parseFloat(document.getElementById("travelMethod").value);
         const meatConsumption = parseFloat(document.getElementById("meatConsumption").value);
-        const homeConsumption = parseFloat(document.getElementById("homestats").value);
+        const homeConsumption = parseFloat(document.getElementById("m2Selection").value);
         const serviceConsumption = parseFloat(document.getElementById("serviceConsumption").value);
         const goodsConsumption = parseFloat(document.getElementById("goodsConsumption").value);
         return travelMethod + meatConsumption + homeConsumption + serviceConsumption + goodsConsumption;
@@ -54,8 +54,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayResult(result) {
         const resultElement = document.getElementById("result");
+        const recommendationsElement = document.getElementById("recommendations");
         const data = JSON.parse(localStorage.getItem('i18n'));
         resultElement.innerHTML = `${data.resultText.replace('{result}', result.toFixed(2))} <br> ${data.thanksMsg}`;
+
+        let recommendationHtml = "";
+        if (Array.isArray(data.recommendations)) {
+            recommendationHtml = "<ul>";
+            data.recommendations.forEach((recommendation) => {
+                recommendationHtml += "<li>" + recommendation + "</li>";
+            });
+            recommendationHtml += "</ul>";
+        }
+
+        recommendationsElement.innerHTML = recommendationHtml; // Update recommendations here
     }
 
     function i18nUpdate() {
@@ -76,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('aboutTitle').textContent = data.aboutTitle;
         document.getElementById('aboutMessage').textContent = data.aboutMessage;
         document.getElementById('startButton').textContent = data.startButton;
+
 
         // Populate travelMethod options
         const travelMethodSelect = document.getElementById("travelMethod");
@@ -98,14 +111,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Populate homestats options
-        const homeSelect = document.getElementById("homestats");
-        homeSelect.innerHTML = "";
-        for (const key in data.homeOptions) {
+        const homeTypeSelect = document.getElementById("homeType");
+        homeTypeSelect.innerHTML = "";
+        const defaultOption = document.createElement("option");
+        defaultOption.text = "Please select";
+        defaultOption.value = "";
+        homeTypeSelect.add(defaultOption);
+
+        for (const homeType in data.homeOptions) {
             const option = document.createElement("option");
-            option.text = data.homeOptions[key].text;
-            option.value = data.homeOptions[key].value;
-            homeSelect.add(option);
+            option.text = homeType;  // use home type like apartment, house as the visible text
+            option.value = homeType; // use home type as the value as well
+            homeTypeSelect.add(option);
         }
+
+
+        homeTypeSelect.addEventListener('change', function () {
+            const m2SelectionSelect = document.getElementById("m2Selection");
+            m2SelectionSelect.innerHTML = "";
+            const selectedHomeType = this.value;
+            const m2Options = data.homeOptions[selectedHomeType]; // Use this selected home type to lookup the m2 options.
+            for (const key in m2Options) {
+                const option = document.createElement("option");
+                option.text = m2Options[key].text;
+                option.value = m2Options[key].value;
+                m2SelectionSelect.add(option);
+            }
+        });
 
         // Populate serviceConsumption options
         const serviceConsumptionSelect = document.getElementById("serviceConsumption");

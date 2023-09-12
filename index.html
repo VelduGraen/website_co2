@@ -7,6 +7,9 @@
     <title id="title">Carbon Footprint Calculator</title>
 </head>
 <body>
+<header>
+    <img alt="Your logo" id="logoImage" src="assests/logo.png">
+</header>
 <select id="lang">
     <option value="en">English</option>
     <option value="is">Íslenska</option>
@@ -60,8 +63,13 @@
             <h2 id="step3-title">Step 3: Home</h2>
             <form id="step3Form">
                 <div class="form-group">
-                    <label for="homestats" id="homestats-label">Select your home consumption:</label>
-                    <select id="homestats" name="homestats" required>
+                    <label for="hometype" id="homestats-label">Select your home consumption:</label>
+                    <select id="homeType" name="homeType">
+                        <option value="">Select Home Type</option>
+                    </select>
+
+                    <select id="m2Selection" name="m2Selection">
+                        <option value="">Select m2 Size</option>
                     </select>
                 </div>
                 <button class="prev-button" type="button">Previous</button>
@@ -102,6 +110,9 @@
             <h2 id="step6-title">Step 6: Your footprint</h2>
             <div id="result">
             </div>
+
+            <h2>Recommendations</h2>
+            <div id="recommendations" class="recommendations-box"></div>
         </div>
     </div>
 </div>
