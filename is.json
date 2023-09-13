@@ -1,122 +1,457 @@
 {
-  "welcomeTitle": "Velkomin(n) í Kolsporareiknirinn!",
-  "welcomeMessage": "Vissir þú að árleg koltvíoxíð neysla einstaklings í Bandaríkjunum er 4,7 tonn að meðaltali. Það er eins og að fljúga frá Singapore til New York 4 sinnum. Ísland stendur sig alls ekki nógu vel í loftslagsmálum og því er mikilvægt að við tökum stórt skref í áttina til þess að betur umbæta okkar frammistöðu í loftslagsmálum. Hér getur þú tekið könnun sem að reiknar út kolefnissporið þitt og hvað þú getur gert til þess að bæta það (ef þarf). Þú verður spurð/ur um t.d. neyslu, ferðalög, mataræði og orkunotkun. Tilgangur þessarar vefsíðu er að fólk átti sig meira á loftslags- og umhverfismálum og hvernig þau eru stödd miðað við aðra Íslendinga. Í kjölfarið getur maður tekið rétt skref í átt að umhverfisvænna lífi með því að nota niðurstöður könnunarinnar sér til fulls og séð hvað maður getur bætt. ",
-  "aboutTitle": "Um Kolsporareiknirinn",
-  "aboutMessage": "Kolsporareiknir er gagnvirkur reiknir sem hjálpar notendum að mæla kolspor þeirra á grundvelli daglegs lífsstíls. Hann gerir fólki kleift að verða meðvituð um kollosun sína og gefur tillögur að því hvernig hægt er að draga úr spori sínu og taka sjálfbærnar ákveður.",
-  "title": "Kolsporareiknir",
-  "mainTitle": "Kolsporareiknir",
-  "startButton": "Reiknaðu útblástur þinn",
-  "nextButtonText": "Áfram",
-  "prevButtonText": "Til baka",
-  "travelLabel": "Veldu ferðalagshátt:",
-  "meatLabel": "Veldu kjötneyslu:",
-  "homeLabel": "Veldu heimilisneyslu:",
-  "serviceConsumptionLabel": "Hversu mikið ertu venjulega að eyða í þjónustu á mánuði?:",
-  "goodsConsumptionLabel": "Hversu mikið ertu venjulega að eyða í vörum á mánuði?:",
-  "step1Title": "Ferðalög",
+  "welcomeTitle": "Welcome to the Carbon Footprint Calculator!",
+  "welcomeMessage": "Do you know that the annual carbon dioxide emissions per capita in the United States are 4.7 tons on average? That's like flying from Singapore to New York 4 times. Iceland is not performing well in climate matters, so it's crucial that we take significant steps to improve our climate performance. Here, you can take a survey that calculates your carbon footprint and suggests ways to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage. The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. In the aftermath, you can take the right steps towards a more environmentally friendly life by using the survey results to see what you can improve.",
+  "aboutTitle": "About Carbon Footprint Calculator",
+  "aboutMessage": "Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
+  "title": "Carbon Footprint Calculator",
+  "mainTitle": "Carbon Footprint Calculator",
+  "startButton": "Calculate Your Footprint",
+  "nextButtonText": "Next",
+  "prevButtonText": "Previous",
+  "travelLabel": "Select your travel method:",
+  "meatLabel": "Select your meat consumption:",
+  "homeLabel": "Select your home consumption:",
+  "serviceConsumptionLabel": "How much do you usual spend on services per month?:",
+  "goodsConsumptionLabel": "How much do you usual spend on goods per month?:",
+  "step1Title": "Travel",
   "travelOptions": {
     "walkBike": {
-      "text": "Ganga eða hjóla",
+      "text": "Walking or Biking",
       "value": 0
     },
     "publicTransport": {
-      "text": "Almenningssamgöngur",
-      "value": 0.5
+      "text": "Public Transport",
+      "value": 0.52
     },
     "patrolAndDiesel": {
-      "text": "Bensín og dísel",
-      "value": 3.0
+      "text": "Patrol and Diesel",
+      "value": 3.05
     },
     "electicCar": {
-      "text": "Rafbil",
-      "value": 0.6
+      "text": "Electric Car",
+      "value": 0.61
     },
     "hybridCar": {
-      "text": "Hlutblandaður bíll",
-      "value": 1.6
+      "text": "Hybrid Car",
+      "value": 0.6
+    },
+    "methaneCar": {
+      "text": "Methane Car",
+      "value": 0.52
     }
   },
-  "step2Title": "Matur",
+  "step2Title": "Food",
   "meatOptions": {
     "meatRegulary": {
-      "text": "Kjöt reglulega 3 til 5 sinnum í viku",
-      "value": 2.5
+      "text": "Meat regulary 3 to 5 times a week",
+      "value": 2.47
     },
     "meatVeryRarely": {
-      "text": "Kjöt mjög sjaldan, minna en 3 sinnum í viku",
-      "value": 0.35
+      "text": "Meat very rarely less than 3 times a week",
+      "value": 2.21
     },
     "onlyChicken": {
-      "text": "Aðeins kjúklingur",
-      "value": 0.35
+      "text": "Only chicken",
+      "value": 1.8
     },
     "pescatarian": {
-      "text": "Fisksjáandi",
-      "value": 0.5
+      "text": "Pescatarian",
+      "value": 1.72
     },
     "vegetarian": {
-      "text": "Grænkeri",
-      "value": 1.5
+      "text": "Vegetarian",
+      "value": 1.72
     },
     "vegan": {
       "text": "Vegan",
-      "value": 1.2
+      "value": 1.27
+    },
+    "averageIcelander": {
+      "text": "Average Icelander more than 6 times a week",
+      "value": 3.54
     }
   },
-  "step3Title": "Heimili",
+  "step3Title": "Select Home Type",
   "homeOptions": {
-    "solarPower": {
-      "text": "Sólarorka",
-      "value": 0
+    "Apartments-district heating": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.11
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.18
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.254
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.30
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.36
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.43
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.49
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.55
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.62
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.68
+      }
     },
-    "electricity": {
-      "text": "Rafmagn",
-      "value": 1.2
+    "Terrace-District heating": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.09
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.15
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.22
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.28
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.34
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.40
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.47
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.53
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.59
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.66
+      }
     },
-    "naturalGas": {
-      "text": "Náttúrugás",
-      "value": 2.5
+    "Semi Detached house-district heating": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.12
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.18
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.24
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.30
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.37
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.43
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.49
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.55
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.62
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.68
+      }
+    },
+    "Detached house-district heating": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.15
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.21
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.27
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.33
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.40
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.46
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.52
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.59
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.65
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.71
+      }
+    },
+    "Apartment-electric": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.48
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.50
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.52
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.54
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.57
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.59
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.61
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.63
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.65
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.68
+      }
+    },
+    "Terrace-electric": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.49
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.51
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.53
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.55
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.57
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.60
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.62
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.64
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.66
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.68
+      }
+    },
+    "Semi-Detached house-electric": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.49
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.51
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.53
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.55
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.58
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.60
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.62
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.64
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.67
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.69
+      }
+    },
+    "Detached House-electric": {
+      "m50": {
+        "text": "50m2",
+        "value": 0.49
+      },
+      "m100": {
+        "text": "100m2",
+        "value": 0.51
+      },
+      "m150": {
+        "text": "150m2",
+        "value": 0.54
+      },
+      "m200": {
+        "text": "200m2",
+        "value": 0.56
+      },
+      "m250": {
+        "text": "250m2",
+        "value": 0.58
+      },
+      "m300": {
+        "text": "300m2",
+        "value": 0.60
+      },
+      "m350": {
+        "text": "350m2",
+        "value": 0.62
+      },
+      "m400": {
+        "text": "400m2",
+        "value": 0.65
+      },
+      "m450": {
+        "text": "450m2",
+        "value": 0.67
+      },
+      "m500": {
+        "text": "500m2",
+        "value": 0.69
+      }
     }
   },
-  "step4Title": "Þjónusta",
+  "step4Title": "Service",
   "serviceConsumptionOptions": {
     "low": {
-      "text": "0-70.000 kr.",
+      "text": "0-70.000 ISK",
       "value": 1.14
     },
     "medium": {
-      "text": "70.000-115.000 kr.",
+      "text": "70.000-115.000 ISK",
       "value": 2.28
     },
     "high": {
-      "text": "115.000-160.000 kr.",
+      "text": "115.000-160.000",
       "value": 3.42
     },
     "veryHigh": {
-      "text": "yfir 160.000 kr.",
+      "text": "160.000 ISK+",
       "value": 4.58
     }
   },
-  "step5Title": "Vörur",
+  "step5Title": "Goods",
   "goodsConsumptionOptions": {
     "low": {
-      "text": "0-30.000 kr.",
+      "text": "0-30.000 ISK",
       "value": 0.76
     },
     "medium": {
-      "text": "30.000-50.000 kr.",
+      "text": "30.000-50.000 ISK",
       "value": 1.52
     },
     "high": {
-      "text": "50.000-70.000 kr.",
+      "text": "50.000-70.000 ISK",
       "value": 2.28
     },
     "veryHigh": {
-      "text": "yfir 70.000 kr.",
+      "text": "70.000 ISK+",
       "value": 3.04
     }
   },
-  "step6Title": "Spor þitt",
-  "resultText": "Kolspor þitt er {result} tónnar af CO2 á ári.",
-  "thanksMsg": "Takk fyrir að reikna kolspor þitt!"
+  "step6Title": "Your footprint",
+  "resultText": "Your carbon footprint is {result} CO2 tons per year.",
+  "thanksMsg": "Thank you for calculating your carbon footprint! Please take our <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEjfSMZ1TqIt_5ubxZTAZ7JXawXXOdlEKEonSo4S6RPZiM0g/viewform?usp=sf_link'>survey</a>.",
+  "recommendations": [
+    "Recommendations\nDiet\nDid you know that animals (mainly cattle and sheep) produce greenhouse gases through a process called \"digestion,\" where microorganisms in their stomachs break down food and produce methane as a byproduct? Soil management, transportation of agricultural produce, livestock waste management, and all other factors in global food production contribute to emissions of greenhouse gases totaling more than 17 billion tons per year.\nHere are some ways for you as an individual to reduce your carbon footprint in terms of dietary consumption.\nAvoid plastic packaging: We know that single-use plastic is harmful to the environment, not only due to the pollution it creates but also because of the energy and fossil fuels used in its production.\nReduce meat consumption: Switching to a vegetarian or vegan diet is the most effective way to reduce your carbon footprint in terms of food. A 2018 study concluded that avoiding meat and dairy products is the single biggest action you can take to reduce your environmental impact on Earth.\nRethink your cooking methods: Food production accounts for 13.8% of the electricity we use in our homes. Finding more energy-efficient ways to cook means less electricity and thus less CO2 emissions.\nEat organic: Organic foods contain more vitamins, minerals, and antioxidants, which are associated with various health benefits compared to non-organic foods. However, their carbon footprint is generally higher than organic foods.\nTransportation\nDid you know that driving a gasoline or diesel car just 10 km per day releases 662 kg of CO2 per year, which is equivalent to almost a round-trip flight from Iceland to New York? Meanwhile, people on average drove about 35 km per day in Iceland in 2019.\nYour most common mode of transportation is a gasoline or diesel car. To reduce your carbon footprint, you can:\nUse public transportation more often (buses).\nCycle or walk shorter distances instead of using a car.\nConsider buying an electric car, a methane car, or a hybrid car.\nBenefits:\nReduces gasoline and oil costs, increasing potential savings.\nIncreases physical activity, leading to better health and well-being.\nReduces pollution ☺.\nYour most common mode of transportation is walking or cycling. That's great! It's not possible to reduce your carbon footprint in this category.\nYour most common mode of transportation is public transport (buses). To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces travel costs, increasing savings.\nReduces pollution ☺.\nYour most common mode of transportation is an electric car. To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nUse public transportation (buses) more often.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces home electricity consumption.\nReduces pollution ☺.\nYour most common mode of transportation is carpooling. To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nUse public transportation (buses) more often.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces home electricity consumption.\nReduces gasoline costs.\nReduces pollution ☺.\nServices\nDid you know that the \"material footprint\" (physical footprint) has increased by 70% since the beginning of 2017?\nOne million plastic bottles are purchased every minute, and five trillion single-use plastic bags are discarded and become waste each year.\nPlastic bags are estimated to take a thousand years to decompose in nature.\nTherefore, it is our responsibility as consumers to buy less and thus reduce our consumption that contributes to the carbon footprint. You can also recycle instead of throwing things in the trash, which will eventually become waste in nature.\nOne of the world's biggest polluters is the fashion industry, and it is estimated that clothing production accounts for about 10% of the total global greenhouse gas emissions. It also accounts for a fifth of the 300 million tons of plastic produced globally each year.\nReduce waste: One of the main goals of Goal 12 is to reduce waste generation. You can contribute by practicing the 3 Rs: Reduce, Reuse, and Recycle. Consume less, buy products with minimal packaging, and recycle materials when possible.\nSupport sustainable brands: Choose products and brands that prioritize sustainability and environmentally friendly practices. Look for environmental labels such as the EU Ecolabel, which indicates environmentally friendly products.\nSave energy: Use energy-efficient appliances, turn off lights and electronic devices when not in use, and consider renewable energy sources such as solar or wind power for your home.\nSustainable transportation: Choose public transportation, carpool, use a bicycle, or walk when possible to reduce your carbon footprint. The EU also encourages the use of electric vehicles (EVs) to reduce emissions.\nReduce food waste: Be conscious of food consumption and storage. Only buy what you need, store food properly to minimize waste, and consider composting organic waste.\nAdvocate for policy change: Contact your local and national representatives to support policies and regulations that promote sustainable consumption and production. The EU has implemented various policies to reduce waste and promote a circular economy.\nEducate yourself: Stay informed about sustainability and solutions. Learn about initiatives and plans from the EU related to responsible consumption and production, such as the Circular Economy Action Plan.\nSupport a circular economy: The EU is actively transitioning to a circular economy model that aims to minimize waste by recycling, refurbishing, and reusing products. Support companies that align with this model and promote circular economy practices in your community.\nReduce single-use plastics: Decrease your use of single-use plastics by using reusable bags, bottles, and containers. Advocate for bans on single-use plastics and encourage businesses to offer sustainable options.\nParticipate in sustainable initiatives: Join local sustainability organizations and participate in community projects related to responsible consumption and production. This could involve volunteering in clean-up efforts, participating in environmental projects, or supporting local farmers' markets.\nBe a conscious consumer: Make informed choices as a consumer. Consider the environmental and social impacts of the products you buy and support companies that prioritize sustainability and ethics.\nReduce clothing waste: Purchase clothing designed to last and consider using second-hand options. Repair and alter clothing when possible instead of discarding it. If possible, avoid fast fashion.\nInvestments: If you have investments or savings, consider ethical or sustainable investment options that align with responsible consumption and production goals.\nElectricity\nElectricity pollution is a significant part of CO2 in our environment, but it's easily improvable. This pollution comes from the release of carbon into the air from the combustion of fossil fuels. If you are high in electricity pollution, here are some tips to help you improve.\nHow to reduce electricity pollution:\nUse less hot water.\nTurn off all lights and devices when not in use.\nUse public transportation or mass transit more often.\nUse less paper."
+  ]
 }

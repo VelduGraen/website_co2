@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const steps = document.querySelectorAll(".step");
     const nextButtons = document.querySelectorAll(".next-button");
     const prevButtons = document.querySelectorAll(".prev-button");
@@ -52,6 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
         return travelMethod + meatConsumption + homeConsumption + serviceConsumption + goodsConsumption;
     }
 
+    function sendDataToGoogleSheet(data) {
+        fetch('https://script.google.com/macros/s/AKfycbwu5V9efGLjmYjsuireMIPc2HfxF1IpZkrTL8O0RqBcjz6cjra0J_y0Xl7C-Rg0sozUaA/exec', {
+            method: 'POST', mode: 'no-cors', cache: 'no-cache', headers: {
+                'Content-Type': 'application/json'
+            }, body: JSON.stringify(data)
+        }).then(response => response.json())
+            .then(data => console.log(data))
+            .catch(e => console.error('Error:', e));
+    }
+
     function displayResult(result) {
         const resultElement = document.getElementById("result");
         const recommendationsElement = document.getElementById("recommendations");
@@ -67,8 +78,19 @@ document.addEventListener("DOMContentLoaded", function () {
             recommendationHtml += "</ul>";
         }
 
-        recommendationsElement.innerHTML = recommendationHtml; // Update recommendations here
+        const data1 = {
+            travelMethod: parseFloat(document.getElementById("travelMethod").value),
+            meatConsumption: parseFloat(document.getElementById("meatConsumption").value),
+            homeConsumption: parseFloat(document.getElementById("m2Selection").value),
+            serviceConsumption: parseFloat(document.getElementById("serviceConsumption").value),
+            goodsConsumption: parseFloat(document.getElementById("goodsConsumption").value)
+        };
+
+        sendDataToGoogleSheet(data1);
+
+        recommendationsElement.innerHTML = recommendationHtml;
     }
+
 
     function i18nUpdate() {
         const data = JSON.parse(localStorage.getItem('i18n'));
