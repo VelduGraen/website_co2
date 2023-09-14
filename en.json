@@ -1,8 +1,8 @@
 {
   "welcomeTitle": "Welcome to the Carbon Footprint Calculator!",
   "welcomeMessage": "Did you know that the annual per capita carbon dioxide emissions in the United States average 4.7 tons, while in Iceland, the average person produces 12 tons per year?  Iceland is not performing well in environmental matters, so it's essential for us to take significant steps to improve our performance in environmental matters.  Here, you can take a survey that calculates your carbon footprint and what you can do to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage.  The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. Subsequently, one can take the right steps towards a more environmentally friendly life using the survey results to see what improvements can be made.",
-  "aboutTitle": "About Carbon Footprint Calculator",
-  "aboutMessage": "Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
+  "aboutTitle": "About The Carbon Footprint Calculator",
+  "aboutMessage": "The Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
   "title": "Carbon Footprint Calculator",
   "mainTitle": "Carbon Footprint Calculator",
   "startButton": "Calculate Your Footprint",
