@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const steps = document.querySelectorAll(".step");
     const nextButtons = document.querySelectorAll(".next-button");
     const prevButtons = document.querySelectorAll(".prev-button");
+    const downloadButton = document.getElementById('downloadPDF');
+    const languageSelect = document.getElementById('lang');
     let currentStep = 0;
 
     const startButton = document.getElementById("startButton");
@@ -10,6 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('frontpage').style.display = "none";
         document.getElementById('about').style.display = "none";
         document.getElementById('content').style.display = "block";
+    });
+
+    downloadButton.addEventListener('click', function () {
+        const selectedLanguage = languageSelect.value;
+        let pdfURL = '';
+
+        if (selectedLanguage === 'en') {
+            pdfURL = 'Recommendations.pdf';
+        } else if (selectedLanguage === 'da') {
+            pdfURL = 'Anbefalinger.pdf';
+        } else if (selectedLanguage === 'is') {
+            pdfURL = 'Ráðleggingar.pdf';
+        }
+
+        window.open(pdfURL, '_blank');
     });
 
     function showStep(stepNumber) {
@@ -65,18 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayResult(result) {
         const resultElement = document.getElementById("result");
-        const recommendationsElement = document.getElementById("recommendations");
         const data = JSON.parse(localStorage.getItem('i18n'));
         resultElement.innerHTML = `${data.resultText.replace('{result}', result.toFixed(2))} <br> ${data.thanksMsg}`;
-
-        let recommendationHtml = "";
-        if (Array.isArray(data.recommendations)) {
-            recommendationHtml = "<ul>";
-            data.recommendations.forEach((recommendation) => {
-                recommendationHtml += "<li>" + recommendation + "</li>";
-            });
-            recommendationHtml += "</ul>";
-        }
 
         const data1 = {
             travelMethod: parseFloat(document.getElementById("travelMethod").value),
@@ -88,9 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         sendDataToGoogleSheet(data1);
 
-        recommendationsElement.innerHTML = recommendationHtml;
     }
-
 
     function i18nUpdate() {
         const data = JSON.parse(localStorage.getItem('i18n'));
@@ -110,6 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('aboutTitle').textContent = data.aboutTitle;
         document.getElementById('aboutMessage').textContent = data.aboutMessage;
         document.getElementById('startButton').textContent = data.startButton;
+        document.getElementById('recommendationsTitle').textContent = data.recommendationsTitle;
+        document.getElementById('downloadPDF').textContent = data.downloadPDFText;
 
 
         // Populate travelMethod options
@@ -221,4 +228,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     langDropDown.dispatchEvent(new Event('change'));
+
 });
