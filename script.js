@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (selectedLanguage === 'da') {
             pdfURL = 'Anbefalinger.pdf';
         } else if (selectedLanguage === 'is') {
-            pdfURL = 'Ráðleggingar.pdf';
+            pdfURL = 'Radlagningar.pdf';
         }
 
         window.open(pdfURL, '_blank');
