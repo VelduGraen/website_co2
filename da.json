@@ -1,8 +1,8 @@
 {
   "welcomeTitle": "Velkommen til CO2-fodaftryk beregneren!",
-  "welcomeMessage": "Did you know that the annual per capita carbon dioxide emissions in the United States average 4.7 tons, while in Iceland, the average person produces 12 tons per year?  Iceland is not performing well in environmental matters, so it's essential for us to take significant steps to improve our performance in environmental matters.  Here, you can take a survey that calculates your carbon footprint and what you can do to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage.  The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. Subsequently, one can take the right steps towards a more environmentally friendly life using the survey results to see what improvements can be made.",
+  "welcomeMessage": "Vidste du, at den årlige pr. capita-udledning af kuldioxid i USA i gennemsnit er 4,7 ton, mens på Island udleder hver person 12 ton om året? Island klarer sig ikke godt nok i klimasager, så det er afgørende, at vi tager betydelige skridt for at forbedre vores klimaprestation. Her kan du tage en undersøgelse, der beregner din kulstofaftryk og foreslår måder at reducere det på (hvis nødvendigt). Du vil blive spurgt om forbrug, rejser, kost og energiforbrug. Formålet med denne hjemmeside er at gøre folk mere opmærksomme på klima- og miljøproblemer og hvordan de sammenligner med andre islændinge. Efterfølgende kan du tage de rigtige skridt mod en mere miljøvenlig livsstil ved at bruge undersøgelsesresultaterne til at se, hvad du kan forbedre.",
   "aboutTitle": "Viden om CO2-fodaftryk beregneren",
-  "aboutMessage": "Vidste du, at den årlige pr. capita-udledning af kuldioxid i USA i gennemsnit er 4,7 ton, mens på Island udleder hver person 12 ton om året? Island klarer sig ikke godt nok i klimasager, så det er afgørende, at vi tager betydelige skridt for at forbedre vores klimaprestation. Her kan du tage en undersøgelse, der beregner din kulstofaftryk og foreslår måder at reducere det på (hvis nødvendigt). Du vil blive spurgt om forbrug, rejser, kost og energiforbrug. Formålet med denne hjemmeside er at gøre folk mere opmærksomme på klima- og miljøproblemer og hvordan de sammenligner med andre islændinge. Efterfølgende kan du tage de rigtige skridt mod en mere miljøvenlig livsstil ved at bruge undersøgelsesresultaterne til at se, hvad du kan forbedre..",
+  "aboutMessage": "En CO2-fodspor-beregner er et interaktivt værktøj, der hjælper brugere med at måle deres kulstofpåvirkning baseret på deres daglige livsstilsvalg. Den gør enkeltpersoner mere opmærksomme på deres kulstofemissioner og giver forslag til at reducere deres fodspor og træffe mere bæredygtige beslutninger.",
   "title": "CO2-fodaftryk beregneren",
   "mainTitle": "CO2-fodaftryk beregneren",
   "startButton": "Beregn dit CO2-fodaftryk",
@@ -11,8 +11,8 @@
   "travelLabel": "Vælg rejse metode:",
   "meatLabel": "Væg kød forbrug:",
   "homeLabel": "Vælg bolig type:",
-  "serviceConsumptionLabel": "Hvor meget bruger du normalt på tjenester om måneden?:",
-  "goodsConsumptionLabel": "Hvor meget bruger du normalt på varer om måneden?:",
+  "serviceConsumptionLabel": "Hvor meget bruger du normalt på tjenester om måneden? f.eks. husleje, lån, forsikringer, hoteller, telefon, internet, sundhedspleje, underholdning etc. Energiforbruget til boliger er undtaget.:",
+  "goodsConsumptionLabel": "Hvor meget bruger du normalt på varer om måneden? f.eks tøj, sko, brødristere, vaskemaskiner, møbler, smykker, legetøj, kæledyr osv. Mad, cykler, biler og brændstof undtaget.:",
   "step1Title": "Rejser",
   "travelOptions": {
     "walkBike": {

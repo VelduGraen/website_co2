@@ -11,8 +11,8 @@
   "travelLabel": "Select your travel method:",
   "meatLabel": "Select your meat consumption:",
   "homeLabel": "Select your home consumption:",
-  "serviceConsumptionLabel": "How much do you usual spend on services per month?:",
-  "goodsConsumptionLabel": "How much do you usual spend on goods per month?:",
+  "serviceConsumptionLabel": "How much do you usual spend on services per month?  e.g. rent, loans, insurance, hotels, telephone, internet, health care, entertainment etc. The energy consumption of housing is excluded.:",
+  "goodsConsumptionLabel": "How much do you usual spend on goods per month? e.g clothes, shoes, toasters, washing machines, furniture, jewelry, toys, pets etc. Food, bikes, cars and fuel excluded.:",
   "step1Title": "Travel",
   "travelOptions": {
     "walkBike": {
