@@ -9,10 +9,10 @@
   "nextButtonText": "Næsta spurning",
   "prevButtonText": "Fyrri spurning",
   "travelLabel": "Hvernig ferðast þú venjulega á milli staða?:",
-  "meatLabel": "Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði.:",
+  "meatLabel": "Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði:",
   "homeLabel": "Veldu það sem lýsir best þínu húsnæði:",
-  "serviceConsumptionLabel": "Hvað eyðir þú miklu í þjónustu á mánuði? t.d. í leigu, lán, tryggingar, hótel, síma, nettengingu, heilbrigðisþjónustu, skemmtanir o.fl. Orkunotkun húsnæðis er undanskilin.:",
-  "goodsConsumptionLabel": "Hvað eyðir þú miklu í vörur á mánuði? t.d. föt, skó, raftæki, heimilistæki, verkfæri, húsgögn, skartgripi, leikföng, gæludýr o.fl. Matur, farartæki og eldsneyti á farartæki eru undanskilin.:",
+  "serviceConsumptionLabel": "Hvað eyðir þú miklu í þjónustu á mánuði? T.d. í leigu, lán, tryggingar, hótel, síma, nettengingu, heilbrigðisþjónustu, skemmtanir o.fl. Orkunotkun húsnæðis er undanskilin.:",
+  "goodsConsumptionLabel": "Hvað eyðir þú miklu í vörur á mánuði? T.d. föt, skó, raftæki, heimilistæki, verkfæri, húsgögn, skartgripi, leikföng, gæludýr o.fl. Matur, farartæki og eldsneyti á farartæki eru undanskilin.:",
   "step1Title": "Ferðamáti. Hvernig ferðast þú venjulega á milli staða?",
   "travelOptions": {
     "walkBike": {
@@ -40,7 +40,7 @@
       "value": 0.52
     }
   },
-  "step2Title": "Matur.Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði.",
+  "step2Title": "Matur. Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði.",
   "meatOptions": {
     "averageIcelander": {
       "text": "Meðal Íslendingur. Borða rautt eða unnið kjöt sex sinnum í viku eða oftar",
@@ -71,7 +71,7 @@
       "value": 1.27
     }
   },
-  "step3Title": "Hvernig er húsnæðið?. Veldu það sem lýsir best þínu húsnæði",
+  "step3Title": "Hvernig er húsnæðið? Veldu það sem lýsir best þínu húsnæði",
   "homeOptions": {
     "Fjölbýli-Hitaveita": {
       "m50": {
@@ -115,7 +115,7 @@
         "value": 0.68
       }
     },
-    "Ráðhús-Hitaveita": {
+    "Raðhús-Hitaveita": {
       "m50": {
         "text": "50m2",
         "value": 0.09
@@ -283,7 +283,7 @@
         "value": 0.68
       }
     },
-    "Ráðhús-Rafhitun": {
+    "Raðhús-Rafhitun": {
       "m50": {
         "text": "50m2",
         "value": 0.49
@@ -449,8 +449,8 @@
     }
   },
   "step6Title": "Kolefnissporið þitt",
-  "resultText": "Kolefnissporrið þitt er {result} tonn CO₂ ígilda á ári.",
-  "thanksMsg": "Takk fyrir að kanna kolefnisreikninn! Ljúktu nú könnuninni með því að smella á <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEjfSMZ1TqIt_5ubxZTAZ7JXawXXOdlEKEonSo4S6RPZiM0g/viewform?usp=sf_link'>survey</a>.",
+  "resultText": "Kolefnissporið þitt er {result} tonn CO₂ ígilda á ári.",
+  "thanksMsg": "Takk fyrir að nota kolefnisreikninn! Ljúktu nú könnuninni með því að smella á <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEjfSMZ1TqIt_5ubxZTAZ7JXawXXOdlEKEonSo4S6RPZiM0g/viewform?usp=sf_link'>survey</a>.",
   "recommendationsTitle": "Ráðleggingar",
   "downloadPDFText": "Smelltu hér til að lesa meira um kolefnissporið þitt og hvernig þú getur dregið úr því."
 }
