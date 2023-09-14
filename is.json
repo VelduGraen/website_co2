@@ -1,79 +1,79 @@
 {
   "welcomeTitle": "Velkomin/n í kolefnisreiknirinn!",
-  "welcomeMessage": "Do you know that the annual carbon dioxide emissions per capita in the United States are 4.7 tons on average? That's like flying from Singapore to New York 4 times. Iceland is not performing well in climate matters, so it's crucial that we take significant steps to improve our climate performance. Here, you can take a survey that calculates your carbon footprint and suggests ways to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage. The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. In the aftermath, you can take the right steps towards a more environmentally friendly life by using the survey results to see what you can improve.",
-  "aboutTitle": "About Carbon Footprint Calculator",
-  "aboutMessage": "Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
-  "title": "Carbon Footprint Calculator",
-  "mainTitle": "Carbon Footprint Calculator",
-  "startButton": "Calculate Your Footprint",
-  "nextButtonText": "Next",
-  "prevButtonText": "Previous",
-  "travelLabel": "Select your travel method:",
-  "meatLabel": "Select your meat consumption:",
-  "homeLabel": "Select your home consumption:",
-  "serviceConsumptionLabel": "How much do you usual spend on services per month?:",
-  "goodsConsumptionLabel": "How much do you usual spend on goods per month?:",
-  "step1Title": "Travel",
+  "welcomeMessage": "Vissir þú að árleg koltvíoxíð neysla einstaklings í Bandaríkjunum er 4,7 tonn að meðaltali en á Íslandi er meðal einstaklingurinn að framleiða 12 tonn á ári. Ísland stendur sig alls ekki nógu vel í loftslagsmálum og því er mikilvægt að við tökum stórt skref í áttina til þess að umbæta okkar frammistöðu í loftslagsmálum.  Hér getur þú tekið könnun sem að reiknar út kolefnissporið þitt og hvað þú getur gert til þess að bæta það (ef þarf). Þú verður spurð/ur um t.d. neyslu, ferðalög, mataræði og orkunotkun. Tilgangur þessarar vefsíðu er að fólk átti sig meira á loftslags- og umhverfismálum og hvernig þau eru stödd miðað við aðra Íslendinga. Í kjölfarið getur maður tekið rétt skref í átt að umhverfisvænna lífi með því að nota niðurstöður könnunarinnar sér til fulls og séð hvað maður getur bætt. ",
+  "aboutTitle": "Um kolefnisreiknirinn",
+  "aboutMessage": "Kolefnisreiknirinn er gagnvirkur reiknir sem aðstoðar notendum að mæla kolspor þeirra samkvæmt lífsstílsvölum. Reiknirinn gefur fólk möguleikan að verða meðvitað um kollosun sína og gefur tillögur og sýnir hvernig það er hægt að minnka kolefnissporið sitt með því að taka sjálfbærari ákvarðanir..",
+  "title": "Kolefnisreiknirinn",
+  "mainTitle": "Kolefnisreiknirinn",
+  "startButton": "Reiknaðu kolefnissporið þitt",
+  "nextButtonText": "Næsta spurning",
+  "prevButtonText": "Fyrri spurning",
+  "travelLabel": "Hvernig ferðast þú venjulega á milli staða?:",
+  "meatLabel": "Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði.:",
+  "homeLabel": "Veldu það sem lýsir best þínu húsnæði:",
+  "serviceConsumptionLabel": "Hvað eyðir þú miklu í þjónustu á mánuði? t.d. í leigu, lán, tryggingar, hótel, síma, nettengingu, heilbrigðisþjónustu, skemmtanir o.fl. Orkunotkun húsnæðis er undanskilin.:",
+  "goodsConsumptionLabel": "Hvað eyðir þú miklu í vörur á mánuði? t.d. föt, skó, raftæki, heimilistæki, verkfæri, húsgögn, skartgripi, leikföng, gæludýr o.fl. Matur, farartæki og eldsneyti á farartæki eru undanskilin.:",
+  "step1Title": "Ferðamáti. Hvernig ferðast þú venjulega á milli staða?",
   "travelOptions": {
     "walkBike": {
-      "text": "Walking or Biking",
+      "text": "Ganga eða hjóla",
       "value": 0
     },
     "publicTransport": {
-      "text": "Public Transport",
+      "text": "almenningssamgöngur",
       "value": 0.52
     },
     "patrolAndDiesel": {
-      "text": "Patrol and Diesel",
+      "text": "Bensín eða dísel",
       "value": 3.05
     },
     "electicCar": {
-      "text": "Electric Car",
+      "text": "Rafmagnsbíll",
       "value": 0.61
     },
     "hybridCar": {
-      "text": "Hybrid Car",
+      "text": "Tengiltvinnbíll",
       "value": 0.6
     },
     "methaneCar": {
-      "text": "Methane Car",
+      "text": "Metanbíll",
       "value": 0.52
     }
   },
-  "step2Title": "Food",
+  "step2Title": "Matur.Veldu það sem lýsir þínum matarvenjum best síðustu 12 mánuði.",
   "meatOptions": {
+    "averageIcelander": {
+      "text": "Meðal Íslendingur. Borða rautt eða unnið kjöt sex sinnum í viku eða oftar",
+      "value": 3.54
+    },
     "meatRegulary": {
-      "text": "Meat regulary 3 to 5 times a week",
+      "text": "Borða reglulega kjöt. Borða rautt eða unnið kjöt þrisvar til fimm sinnum í viku",
       "value": 2.47
     },
     "meatVeryRarely": {
-      "text": "Meat very rarely less than 3 times a week",
+      "text": "Borða lítið kjöt. Borða rautt eða unnið kjöt sjaldnar en þrisvar sinnum í viku",
       "value": 2.21
     },
     "onlyChicken": {
-      "text": "Only chicken",
+      "text": "Kjúklingaæta. Borða kjúkling en hvorki rautt né unnið kjöt",
       "value": 1.8
     },
     "pescatarian": {
-      "text": "Pescatarian",
+      "text": "Fiskæta. Borða fisk en hvorki rautt kjöt, unnið kjöt né kjúkling",
       "value": 1.72
     },
     "vegetarian": {
-      "text": "Vegetarian",
+      "text": "Grænmetisæta. Borða hvorki rautt kjöt, unnið kjöt, kjúkling né fisk",
       "value": 1.72
     },
     "vegan": {
-      "text": "Vegan",
+      "text": "Grænkeri (vegan). Borða hvorki rautt kjöt, unnið kjöt, kjúkling, egg né mjólkurvörur",
       "value": 1.27
-    },
-    "averageIcelander": {
-      "text": "Average Icelander more than 6 times a week",
-      "value": 3.54
     }
   },
-  "step3Title": "Select Home Type",
+  "step3Title": "Hvernig er húsnæðið?. Veldu það sem lýsir best þínu húsnæði",
   "homeOptions": {
-    "Apartments-district heating": {
+    "Fjölbýli-Hitaveita": {
       "m50": {
         "text": "50m2",
         "value": 0.11
@@ -115,7 +115,7 @@
         "value": 0.68
       }
     },
-    "Terrace-District heating": {
+    "Ráðhús-Hitaveita": {
       "m50": {
         "text": "50m2",
         "value": 0.09
@@ -157,7 +157,7 @@
         "value": 0.66
       }
     },
-    "Semi Detached house-district heating": {
+    "Parhús-Hitaveita": {
       "m50": {
         "text": "50m2",
         "value": 0.12
@@ -199,7 +199,7 @@
         "value": 0.68
       }
     },
-    "Detached house-district heating": {
+    "Einbýlishús-Hitaveita": {
       "m50": {
         "text": "50m2",
         "value": 0.15
@@ -241,7 +241,7 @@
         "value": 0.71
       }
     },
-    "Apartment-electric": {
+    "Fjölbýli-Rafhitun": {
       "m50": {
         "text": "50m2",
         "value": 0.48
@@ -283,7 +283,7 @@
         "value": 0.68
       }
     },
-    "Terrace-electric": {
+    "Ráðhús-Rafhitun": {
       "m50": {
         "text": "50m2",
         "value": 0.49
@@ -325,7 +325,7 @@
         "value": 0.68
       }
     },
-    "Semi-Detached house-electric": {
+    "Parhús-Rafhitun": {
       "m50": {
         "text": "50m2",
         "value": 0.49
@@ -367,7 +367,7 @@
         "value": 0.69
       }
     },
-    "Detached House-electric": {
+    "Einbýlishús-Rafhitun": {
       "m50": {
         "text": "50m2",
         "value": 0.49
@@ -410,7 +410,7 @@
       }
     }
   },
-  "step4Title": "Service",
+  "step4Title": "Þjónusta",
   "serviceConsumptionOptions": {
     "low": {
       "text": "0-70.000 ISK",
@@ -429,7 +429,7 @@
       "value": 4.58
     }
   },
-  "step5Title": "Goods",
+  "step5Title": "Vörur",
   "goodsConsumptionOptions": {
     "low": {
       "text": "0-30.000 ISK",
@@ -448,10 +448,10 @@
       "value": 3.04
     }
   },
-  "step6Title": "Your footprint",
-  "resultText": "Your carbon footprint is {result} CO2 tons per year.",
-  "thanksMsg": "Thank you for calculating your carbon footprint! Please take our <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEjfSMZ1TqIt_5ubxZTAZ7JXawXXOdlEKEonSo4S6RPZiM0g/viewform?usp=sf_link'>survey</a>.",
+  "step6Title": "Kolefnissporið þitt",
+  "resultText": "Kolefnissporrið þitt er {result} tonn CO₂ ígilda á ári.",
+  "thanksMsg": "Takk fyrir að kanna kolefnisreiknirinn! Ljúktu nú könnuninni með því að smella á <a href='https://docs.google.com/forms/d/e/1FAIpQLSdEjfSMZ1TqIt_5ubxZTAZ7JXawXXOdlEKEonSo4S6RPZiM0g/viewform?usp=sf_link'>survey</a>.",
   "recommendations": [
-    "Recommendations\nDiet\nDid you know that animals (mainly cattle and sheep) produce greenhouse gases through a process called \"digestion,\" where microorganisms in their stomachs break down food and produce methane as a byproduct? Soil management, transportation of agricultural produce, livestock waste management, and all other factors in global food production contribute to emissions of greenhouse gases totaling more than 17 billion tons per year.\nHere are some ways for you as an individual to reduce your carbon footprint in terms of dietary consumption.\nAvoid plastic packaging: We know that single-use plastic is harmful to the environment, not only due to the pollution it creates but also because of the energy and fossil fuels used in its production.\nReduce meat consumption: Switching to a vegetarian or vegan diet is the most effective way to reduce your carbon footprint in terms of food. A 2018 study concluded that avoiding meat and dairy products is the single biggest action you can take to reduce your environmental impact on Earth.\nRethink your cooking methods: Food production accounts for 13.8% of the electricity we use in our homes. Finding more energy-efficient ways to cook means less electricity and thus less CO2 emissions.\nEat organic: Organic foods contain more vitamins, minerals, and antioxidants, which are associated with various health benefits compared to non-organic foods. However, their carbon footprint is generally higher than organic foods.\nTransportation\nDid you know that driving a gasoline or diesel car just 10 km per day releases 662 kg of CO2 per year, which is equivalent to almost a round-trip flight from Iceland to New York? Meanwhile, people on average drove about 35 km per day in Iceland in 2019.\nYour most common mode of transportation is a gasoline or diesel car. To reduce your carbon footprint, you can:\nUse public transportation more often (buses).\nCycle or walk shorter distances instead of using a car.\nConsider buying an electric car, a methane car, or a hybrid car.\nBenefits:\nReduces gasoline and oil costs, increasing potential savings.\nIncreases physical activity, leading to better health and well-being.\nReduces pollution ☺.\nYour most common mode of transportation is walking or cycling. That's great! It's not possible to reduce your carbon footprint in this category.\nYour most common mode of transportation is public transport (buses). To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces travel costs, increasing savings.\nReduces pollution ☺.\nYour most common mode of transportation is an electric car. To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nUse public transportation (buses) more often.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces home electricity consumption.\nReduces pollution ☺.\nYour most common mode of transportation is carpooling. To reduce your carbon footprint, you can:\nCycle or walk shorter distances.\nUse public transportation (buses) more often.\nBenefits:\nIncreased physical activity, leading to better health and well-being.\nReduces home electricity consumption.\nReduces gasoline costs.\nReduces pollution ☺.\nServices\nDid you know that the \"material footprint\" (physical footprint) has increased by 70% since the beginning of 2017?\nOne million plastic bottles are purchased every minute, and five trillion single-use plastic bags are discarded and become waste each year.\nPlastic bags are estimated to take a thousand years to decompose in nature.\nTherefore, it is our responsibility as consumers to buy less and thus reduce our consumption that contributes to the carbon footprint. You can also recycle instead of throwing things in the trash, which will eventually become waste in nature.\nOne of the world's biggest polluters is the fashion industry, and it is estimated that clothing production accounts for about 10% of the total global greenhouse gas emissions. It also accounts for a fifth of the 300 million tons of plastic produced globally each year.\nReduce waste: One of the main goals of Goal 12 is to reduce waste generation. You can contribute by practicing the 3 Rs: Reduce, Reuse, and Recycle. Consume less, buy products with minimal packaging, and recycle materials when possible.\nSupport sustainable brands: Choose products and brands that prioritize sustainability and environmentally friendly practices. Look for environmental labels such as the EU Ecolabel, which indicates environmentally friendly products.\nSave energy: Use energy-efficient appliances, turn off lights and electronic devices when not in use, and consider renewable energy sources such as solar or wind power for your home.\nSustainable transportation: Choose public transportation, carpool, use a bicycle, or walk when possible to reduce your carbon footprint. The EU also encourages the use of electric vehicles (EVs) to reduce emissions.\nReduce food waste: Be conscious of food consumption and storage. Only buy what you need, store food properly to minimize waste, and consider composting organic waste.\nAdvocate for policy change: Contact your local and national representatives to support policies and regulations that promote sustainable consumption and production. The EU has implemented various policies to reduce waste and promote a circular economy.\nEducate yourself: Stay informed about sustainability and solutions. Learn about initiatives and plans from the EU related to responsible consumption and production, such as the Circular Economy Action Plan.\nSupport a circular economy: The EU is actively transitioning to a circular economy model that aims to minimize waste by recycling, refurbishing, and reusing products. Support companies that align with this model and promote circular economy practices in your community.\nReduce single-use plastics: Decrease your use of single-use plastics by using reusable bags, bottles, and containers. Advocate for bans on single-use plastics and encourage businesses to offer sustainable options.\nParticipate in sustainable initiatives: Join local sustainability organizations and participate in community projects related to responsible consumption and production. This could involve volunteering in clean-up efforts, participating in environmental projects, or supporting local farmers' markets.\nBe a conscious consumer: Make informed choices as a consumer. Consider the environmental and social impacts of the products you buy and support companies that prioritize sustainability and ethics.\nReduce clothing waste: Purchase clothing designed to last and consider using second-hand options. Repair and alter clothing when possible instead of discarding it. If possible, avoid fast fashion.\nInvestments: If you have investments or savings, consider ethical or sustainable investment options that align with responsible consumption and production goals.\nElectricity\nElectricity pollution is a significant part of CO2 in our environment, but it's easily improvable. This pollution comes from the release of carbon into the air from the combustion of fossil fuels. If you are high in electricity pollution, here are some tips to help you improve.\nHow to reduce electricity pollution:\nUse less hot water.\nTurn off all lights and devices when not in use.\nUse public transportation or mass transit more often.\nUse less paper."
+    "Ráðlagningar   Matarræði   Vissir þú að dýr (aðallega sauðfé og nautgripir) framleiða gróðurhúsalofttegundir með ferli sem kallast \"iðragerjun,\" þegar örverur í meltingarfærum þeirra brjóta niður mat framleiða þær metan sem aukaafurð. Jarðvegsvinnsla, flutningar á uppskeru og búfé, stjórnun húsdýraáburðar og allir aðrir þættir matvælaframleiðslu á heimsvísu valda losun gróðurhúsalofttegunda sem nemur meira en 17 milljörðum tonna á ári.    Hér eru nokkrar leiðir fyrir þig sem einstakling til að minnka þitt kolefnisspor varðandi matarneyslu.    Forðast plastumbúðir, við vitum að einnota plast er skaðlegt fyrir umhverfið, ekki bara mengunin sem það skapar heldur einnig orkan og jarðefnaeldsneytið sem fylgir því að framleiða það.    Minnka neyslu kjöts,  að skipta yfir í grænmetisæta eða vegan mataræði er ein áhrifaríkasta leiðin til að minnka kolefnisfótspor varðandi mat. Rannsókn frá 2018 komst að þeirri niðurstöðu að forðast kjöt og mjólkurvörur væri ein stærsta einstaka leiðin til að draga úr umhverfisáhrifum þínum á jörðinni.    Endurhugsa þínar matreiðsluaðferðir, tölur sýna að matarframleiðsla ber ábyrgð á 13.8% af rafmagninu sem við notum á heimilum okkar, þannig að finna skilvirkari leiðir til að elda þýðir minna rafmagn og þar af leiðandi minna CO2 framleitt.   Borða lífrænt, lífrænar afurðir innihalda meira af vítamínum, steinefnum og andoxunarefnum – sem tengjast ýmsum heilsufarslegum ávinningi en ólífrænir ávextir og grænmeti. Er kolefnisfótspor þeirra er einnig mun meira heldur en lífrænir. Ferðamáti   Vissir þú að það að keyra dísel-/bensín bíl aðeins 10 km á dag losar um 662 kg af CO2 á ári sem jafngildir tæplega flugi fram og til baka og aftur fram frá Íslandi til New York? Samt keyrði fólk að meðaltali um 35 km á dag á Íslandi árið 2019.    Hér á eftir eru nokkrar leiðir til þess að minnka kolefnissporið þitt:   Þú getur gengið eða hjólað styttri vegalengdir þar sem óþarfi er að nota bíl. Hver km sem þú hjólar skiptir máli til langs tíma litið. Einn km á dag á hjóli eða gangandi á ári sparar helling af bensínkostnaði, fer betur með bílinn og þú færð mikla hreyfingu út úr því sem leiðir til betri heilsu og meiri vellíðan. Það að hjóla eða ganga stækkar kolefnisspor þitt ekki neitt og er því áhrifaríkasta aðferðin við það að minnka kolefnissporið.   Þú getur notað almenningssamgöngur oftar. Strætó fer mest allt og er því frábær og ódýr leið til þess að ferðast um bæinn. Hann losar að sjálfsögðu mun minna af koltvíoxíði á hvern farþega og þess vegna minnkar kolefnisspor þitt töluvert. Þú sparar mikið því strætókort fyrir árið kostar mun minna en árskostnaður fyrir bensín.    Þú getur eignað þér rafmagnsbíl eða tengiltvinnbíl í stað dísel- eða bensínbíls. Þó að rafmagnsbílarnir hafa áhrif á náttúruna og losa frá sér koltvíoxíð þá eru áhrifin mun minni heldur en hjá bensínbíl. Kostnaður við það að reka rafmagnsbíl er að auki margfalt minni heldur en rekstur bensínbíls. Nýja kynslóðin af rafmagnsbílum eru með meiri gæði en bensín- og díselbílarnir.    Þú getur sleppt því að hafa bílinn í gangi þegar þú bíður. Það eru örugglega ekki allir sem átta sig á þessu en þetta mengar mikið, sérstaklega til langs tíma litið.    Vertu klár og skipulegðu ferðir þínar. Það er óþarfi að fara fram og til baka að skutla þegar þú getur tekið farþegana með í leiðinni og sparar með því heilmikið af mengun og bensínkostnaði.   Þetta skiptir allt mjög miklu máli og hefur mikil áhrif til langs tíma litið. Þess vegna verður að vera var um það hvernig er verið að ferðast. Ef að allir standa saman í þessu er mjög einfalt að minnka kolefnisspor landsins.                Þjónustur   Vissir þú að hið hnattræna ,,neyslufótspor” (efnislega fótspor) jókst um 70% frá aldamótum til ársins 2017.     Ein milljón plastflaskna eru keyptar á hverri einustu mínútu og fimm trilljón einnota plastpokar er hent og gerðir að úrgangi á hverju ári.    Plastpokar eru taldir taka eitt þúsund ár að sundrast úti í náttúrunni.      Ábyrgðin er því á okkur neytendum að kaupa minna og þar með draga úr    neyslunni sem dregur úr kolefnissporinu.    Einnig er hægt að endurvinna í staðinn fyrir að henda í ruslið sem mun á endanum verða úrgangur og lenda í náttúrunni.    Einn af stærstu neysluframleiðendum heimsins eru fataframleiðendur, en talið er að fataframleiðsla tekur upp í kringum 10% af allri koltvísýringsframleiðslu á heimsvísu. Það stendur einnig fyrir fimmtung af þeim 300 milljónum tonna af plasti sem framleitt er á heimsvísu á hverju ári.      Draga úr sóun: Eitt af meginmarkmiðum markmiðs 12 er að draga úr úrgangsmyndun. Þú getur lagt þitt af mörkum með því að æfa 3 R: Minnka, endurnýta og endurvinna. Neyta minna, kaupa vörur með lágmarksumbúðum og endurvinna efni þegar mögulegt er   Styðjið sjálfbær vörumerki: Veldu vörur og vörumerki sem setja sjálfbærni og vistvæna starfshætti í forgang. Leitaðu að vottunum eins og umhverfismerki ESB, sem gefur til kynna umhverfisvænar vörur.   Sparaðu orku: Notaðu orkusparandi tæki, slökktu ljós og rafeindatæki þegar þau eru ekki í notkun og íhugaðu endurnýjanlega orkugjafa eins og sólar- eða vindorku fyrir heimili þitt.   Sjálfbærar samgöngur: Veldu almenningssamgöngur, samferða, notaðu reiðhjól eða ganga þegar mögulegt er til að minnka kolefnisfótspor þitt. ESB hvetur einnig til notkunar rafknúinna farartækja (EVS) til að draga úr losun.   Dragðu úr matarsóun: Vertu meðvituð um matarneyslu og geymslu. Kauptu aðeins það sem þú þarft, geymdu matinn rétt til að lágmarka sóun og íhugaðu að jarðgerð lífrænan úrgang.   Talsmaður stefnubreytingar: Hafðu samband við staðbundna og landsbundna fulltrúa þína til að styðja stefnur og reglugerðir sem stuðla að sjálfbærri neyslu og framleiðslu. ESB hefur innleitt ýmsar stefnur til að draga úr sóun og stuðla að hringlaga hagkerfi.   Fræddu þig: Vertu upplýstur um sjálfbærni og lausnir. Lærðu um frumkvæði og áætlanir ESB sem tengjast ábyrgri neyslu og framleiðslu, svo sem aðgerðaáætlun um hringlaga hagkerfi.   Stuðningur við hringlaga hagkerfi: ESB vinnur ötullega að því að skipta yfir í hringlaga hagkerfislíkan sem miðar að því að lágmarka sóun með því að endurnýta, gera við og endurvinna vörur. Styðjið fyrirtæki sem eru í takt við þetta líkan og efla hringlaga hagkerfishætti í samfélaginu þínu.   Dragðu úr einnota plasti: Dragðu úr notkun þinni á einnota plasti með því að nota einnota poka, flöskur og ílát. Styðja bann við einnota plasti og hvetja fyrirtæki til að bjóða upp á sjálfbæra valkosti.   Taktu þátt í sjálfbærum átaksverkefnum: Gakktu til liðs við staðbundin sjálfbærnisamtök og taktu þátt í samfélagsverkefnum sem tengjast ábyrgri neyslu og framleiðslu. Þetta gæti falið í sér sjálfboðaliðastarf í hreinsunarstarfi, þátttöku í vistvænum verkefnum eða stuðning við staðbundna bændamarkaði.   Val neytenda: Taktu upplýsta val sem neytandi. Íhugaðu umhverfis- og félagsleg áhrif vörunnar sem þú kaupir og styðjið fyrirtæki sem setja sjálfbærni og siðferði í forgang.   Dragðu úr sóun á fötum: Kauptu fatnað sem er smíðaður til að endast og íhugaðu notaða valkosti. Gerðu við og lagfærðu fatnað þegar mögulegt er í stað þess að farga því.   Fjárfestingar: Ef þú ert með fjárfestingar eða sparnað skaltu íhuga siðferðilega eða sjálfbæra fjárfestingarkosti sem samræmast ábyrgri neyslu og framleiðslumarkmiðum.                              Rafmagn   Rafmagnsmengun er stór partur af CO2 í umhverfi okkar en það er léttilega hægt að bæta það. Sú mengun kemur losun í lofti frá brennslu jarðefnaeldsneytis. Ef þú ert há/r í rafmagnsmengun þá koma hér nokkur ráð sem hjálpa þér að bæta þig.   Hvernig er hægt að bæta sig í rafmagnsmengun?   Nota minna af heitu vatni.   Slökkva á öllum ljósum og tækjum þegar þau eru ekki í notkun.   Nota strætó eða almenningsferðarmáta oftar.   Nota minna af pappír "
   ]
 }

@@ -1,6 +1,6 @@
 {
   "welcomeTitle": "Welcome to the Carbon Footprint Calculator!",
-  "welcomeMessage": "Do you know that the annual carbon dioxide emissions per capita in the United States are 4.7 tons on average? That's like flying from Singapore to New York 4 times. Iceland is not performing well in climate matters, so it's crucial that we take significant steps to improve our climate performance. Here, you can take a survey that calculates your carbon footprint and suggests ways to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage. The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. In the aftermath, you can take the right steps towards a more environmentally friendly life by using the survey results to see what you can improve.",
+  "welcomeMessage": "Did you know that the annual per capita carbon dioxide emissions in the United States average 4.7 tons, while in Iceland, the average person produces 12 tons per year?  Iceland is not performing well in environmental matters, so it's essential for us to take significant steps to improve our performance in environmental matters.  Here, you can take a survey that calculates your carbon footprint and what you can do to reduce it (if necessary). You will be asked about consumption, travel, diet, and energy usage.  The purpose of this website is to make people more aware of climate and environmental issues and how they compare to other Icelanders. Subsequently, one can take the right steps towards a more environmentally friendly life using the survey results to see what improvements can be made.",
   "aboutTitle": "About Carbon Footprint Calculator",
   "aboutMessage": "Carbon Footprint Calculator is an interactive tool that helps users measure their carbon impact based upon their daily lifestyle choices. It enables individuals to become more aware of their carbon emissions and provides suggestions to reduce their footprint and make more sustainable decisions.",
   "title": "Carbon Footprint Calculator",
@@ -42,6 +42,10 @@
   },
   "step2Title": "Food",
   "meatOptions": {
+    "averageIcelander": {
+      "text": "Average Icelander more than 6 times a week",
+      "value": 3.54
+    },
     "meatRegulary": {
       "text": "Meat regulary 3 to 5 times a week",
       "value": 2.47
@@ -65,10 +69,6 @@
     "vegan": {
       "text": "Vegan",
       "value": 1.27
-    },
-    "averageIcelander": {
-      "text": "Average Icelander more than 6 times a week",
-      "value": 3.54
     }
   },
   "step3Title": "Select Home Type",
